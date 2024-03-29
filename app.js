@@ -7,7 +7,7 @@ const getHumidity = document.getElementById("humidity");
 const getFeelsLike = document.getElementById("feelsLike");
 
 async function getData(city){
-    const url = `http://api.weatherapi.com/v1/current.json?key=35157979dd694b85a90115723242903&q=${city}&aqi=yes`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=35157979dd694b85a90115723242903&q=${city}&aqi=yes`;
     const promise = await fetch(url);
     return await promise.json();
 }
